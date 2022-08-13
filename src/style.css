@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+main {
+  padding: 0 10%;
+}
+
+#todo-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25% 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: padding 300ms ease-in-out, max-height 500ms ease-in-out;
+  transform: translate3d(0, 0, 0);
+  max-height: 300px;
+  background: #fff;
+  box-shadow:
+    0 4px 8px 0 rgb(0 0 0 / 20%),
+    0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#inner-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#todo-list-section.active {
+  cursor: auto;
+}
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+  float: none;
+  position: absolute;
+  right: 1rem;
+}
+
+.list-header .icon {
+  top: 1rem;
+}
+
+.toDo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+#list-header {
+  flex-direction: row;
+}
+
+#list-header h1 {
+  color: #545862;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1rem;
+  line-height: 20px;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 0 40px 0 1rem;
+  line-height: 50px;
+  height: 50px;
+  font-style: italic;
+  border: none !important;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  resize: none;
+}
+
+#clear-btn {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 1rem auto;
+  display: block;
+  opacity: 0.5;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50px;
+  padding-left: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  gap: 15px;
+}
+
+.drop-drag-icon {
+  width: 4px;
+  cursor: pointer;
+  float: none;
+  position: absolute;
+  right: 1rem;
+}

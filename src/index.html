@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section id="todo-list-section">
+            <div id="inner-container">
+                <div class="toDo" id="list-header">
+                    <h1>Today's Do List</h1>
+                    <img class="icon" src="./images/refresh_icon.svg" alt="reset icon">
+                </div>
+                <div class="toDo" id="list-add-container">
+                    <input class="todo-input" type="text" id="list-add" name="list-add" placeholder="Add to your list...">
+                    <img class="icon" src="./images/enter-icon.svg" alt="enter-icon">
+                </div>
+                <ul id="todo-list"></ul>
+                <div id="btn-container">
+                    <button id="clear-btn" type="button">
+                        Clear all completed
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
