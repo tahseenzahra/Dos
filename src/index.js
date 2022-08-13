@@ -5,17 +5,17 @@ const toDoTask = [
   {
     description: 'task1',
     completed: false,
-    index: 0,
+    index: 1,
   },
   {
     description: 'task2',
     completed: false,
-    index: 1,
+    index: 2,
   },
   {
     description: 'task3',
     completed: false,
-    index: 2,
+    index: 3,
   },
 ];
 
@@ -37,7 +37,6 @@ function getTaskList(task) {
   }
   {
     const toDoTaskplaceicon = document.createElement('img');
-    // toDoTaskplaceicon.src = '.images/drag-drop-icon.svg';
     toDoTaskplaceicon.src = dragDropIcon;
     toDoTaskplaceicon.checked = task.completed;
     toDoTaskplaceicon.classList.add('drop-drag-icon');
