@@ -13,4 +13,3 @@ document
     }
     toDoList.removeCompletedTasks();
   });
-  

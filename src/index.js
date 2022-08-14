@@ -2,7 +2,7 @@ import './style.css';
 // import TaskManager from './taskmanager.js';
 import dragDropIcon from './images/drag-drop-icon.svg';
 import deleteIcon from './images/delete-icon.svg';
-import toDoList from './todolist.js';
+import toDoTask from './todolist.js';
 import updateListItem from './taskStatusManager.js';
 import './dragdrop.js';
 
@@ -76,7 +76,7 @@ function updateTaskListToHTML() {
   toDoTask.taskList.forEach((task) => document.getElementById('todo-list').appendChild(getTaskList(task)));
 }
 function addTask(description) {
-  if (description) { document.getElementById('todo-list').appendChild(getListItem(toDoList.add(description))); }
+  if (description) { document.getElementById('todo-list').appendChild(getTaskList(toDoTask.add(description))); }
 }
 
 const addTaskElement = document.getElementById('list-add');
