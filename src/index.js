@@ -17,7 +17,7 @@ function getTaskList(task) {
     toDoTaskStatus.type = 'checkbox';
     toDoTaskStatus.checked = task.completed;
     toDoTaskStatus.addEventListener('change', () => {
-      if (!toDoTaskStatus.checketodoTaskElementd) toDoTaskStatus.nextSibling.style.textDecoration = 'none';
+      if (!toDoTaskStatus.checked) toDoTaskStatus.nextSibling.style.textDecoration = 'none';
       else toDoTaskStatus.nextSibling.style.textDecoration = 'line-through';
       updateListItem(toDoTaskStatus.checked, task.index);
     });
