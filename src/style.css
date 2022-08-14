@@ -62,6 +62,15 @@ main {
   width: 100%;
 }
 
+.toDo > img {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.toDo > img:hover {
+  opacity: 1;
+}
+
 #list-header {
   flex-direction: row;
 }
@@ -114,10 +123,15 @@ main {
   gap: 15px;
 }
 
-.drop-drag-icon {
+.drop-drag-icon,
+.delete-icon {
   width: 4px;
   cursor: pointer;
   float: none;
   position: absolute;
   right: 1rem;
+}
+
+.delete-icon {
+  opacity: 1;
 }
