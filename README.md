@@ -19,7 +19,6 @@ Fork / Clone the repository to use it on your local system.
 
 View the file through the source code.
 
-## Authors
 
 👤 **Tahseen Zahra**
 
