@@ -41,8 +41,14 @@ main {
   cursor: auto;
 }
 
-.icon {
+.icon,
+.delete-icon {
   width: 20px;
+}
+
+.icon,
+.delete-icon,
+.task-drag-icon {
   cursor: pointer;
   float: none;
   position: absolute;
@@ -60,6 +66,17 @@ main {
   height: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   width: 100%;
+}
+
+.delete-icon,
+.toDo > img {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.toDo > img:hover,
+.delete-icon:hover {
+  opacity: 1;
 }
 
 #list-header {
@@ -80,7 +97,8 @@ main {
   white-space: nowrap;
 }
 
-.todo-input {
+.todo-input,
+.task-description {
   width: 100%;
   padding: 0 40px 0 1rem;
   line-height: 50px;

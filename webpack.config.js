@@ -6,7 +6,9 @@ module.exports = {
 
   // Define entry point
 
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+  },
 
   devServer: {
     static: './dist',
