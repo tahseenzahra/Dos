@@ -1,13 +1,9 @@
 import './style.css';
-// uncoment below
-// import TaskManager from './taskmanager.js';
 import dragDropIcon from './images/drag-drop-icon.svg';
 import deleteIcon from './images/delete-icon.svg';
 import toDoTask from './todolist.js';
 import updateListItem from './taskStatusManager.js';
 import './dragdrop.js';
-// uncom below
-// const toDoTask = new TaskManager('Dolist');
 
 function getTaskList(task) {
   const toDoTaskItem = document.createElement('li');
@@ -81,10 +77,8 @@ function addTask(description) {
 }
 
 const addTaskElement = document.getElementById('list-add');
-// console.log("i am outside keypress call");
 addTaskElement.addEventListener('keypress', (event) => {
   if (event.key === 'Enter') {
-    // console.log("i am inside keypress call");
     event.preventDefault();
     addTask(event.target.value);
     event.target.value = '';
@@ -92,7 +86,6 @@ addTaskElement.addEventListener('keypress', (event) => {
 });
 
 document.querySelector('#list-add-container > img').addEventListener('click', (event) => {
-  // console.log("i am inside query selector call");
   event.preventDefault();
   addTask(addTaskElement.value);
   addTaskElement.value = '';
