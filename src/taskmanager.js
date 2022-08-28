@@ -6,6 +6,12 @@ export default class TaskManager {
     this.taskList = JSON.parse(localStorage.getItem(key)) || [];
   }
 
+  // module.exports = class TaskManager {
+  //   constructor(key) {
+  //     this.key = key;
+  //     this.taskList = JSON.parse(localStorage.getItem(key)) || [];
+  //   }
+
     add = (description) => {
       const newTask = new Task(description, this.taskList.length + 1);
       this.taskList.push(newTask);
