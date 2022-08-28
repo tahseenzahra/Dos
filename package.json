@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://tahseenzahra.github.io/To-Do-List",
+  "homepage": "https://tahseenzahra.github.io/To-Do-List/dist/",
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
