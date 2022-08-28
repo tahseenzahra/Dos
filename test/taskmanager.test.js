@@ -1,4 +1,5 @@
-import TaskManager from '../src/taskmanager.js';
+import TaskManager from '../src/js/taskmanager.js';
+import './localStorage';
 
 describe('Testing add item & remove item', () => {
   const newList = new TaskManager('tasks');
