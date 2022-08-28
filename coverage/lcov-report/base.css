@@ -125,16 +125,25 @@ table.coverage {
 .coverage-summary tr { border-bottom: 1px solid #bbb; }
 .keyline-all { border: 1px solid #ddd; }
 
+.coverage-summary td {
+  border-right: 1px solid #bbb;
+  padding: 10px;
+}
+
 table.coverage td {
   margin: 0;
   padding: 0;
   vertical-align: top;
 }
 
-.coverage-summary td,
-.coverage-summary th { padding: 10px; }
+.coverage-summary th {
+  padding: 10px;
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+}
 .coverage-summary tbody { border: 1px solid #bbb; }
-.coverage-summary td { border-right: 1px solid #bbb; }
+
 .coverage-summary td:last-child { border-right: none; }
 
 table.coverage td.line-count {
@@ -154,11 +163,6 @@ table.coverage td span.cline-any {
   width: 100%;
 }
 
-.coverage-summary th {
-  text-align: left;
-  font-weight: normal;
-  white-space: nowrap;
-}
 .coverage-summary th.file { border-right: none !important; }
 
 .coverage-summary th.pic,
