@@ -7,7 +7,7 @@ module.exports = {
   // Define entry point
 
   entry: {
-    index: './src/js/index.js',
+    index: './src/index.js',
   },
 
   devServer: {
