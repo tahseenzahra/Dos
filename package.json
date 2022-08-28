@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages –d dist",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack --config webpack.config.js",
     "test": "jest --coverage"
