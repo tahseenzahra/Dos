@@ -9,7 +9,7 @@ In the webpack technology is used to arrange the code.
 
 ## Live Project
 
-[Click here to view](https://tahseenzahra.github.io/To-Do-List/)
+[Click here to view](https://tahseenzahra.github.io/Dos/)
 
 ## Getting Started
 
