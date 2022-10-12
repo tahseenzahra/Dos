@@ -1,6 +1,6 @@
-import './style.css';
-import dragDropIcon from './images/drag-drop-icon.svg';
-import deleteIcon from './images/delete-icon.svg';
+import '../style.css';
+import dragDropIcon from '../images/drag-drop-icon.svg';
+import deleteIcon from '../images/delete-icon.svg';
 import toDoTask from './todolist.js';
 import updateListItem from './taskStatusManager.js';
 import './dragdrop.js';
